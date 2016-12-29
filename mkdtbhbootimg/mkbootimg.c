@@ -39,11 +39,15 @@
 
 #define DTBH_MAGIC         "DTBH"
 #define DTBH_VERSION       2
-#define DTBH_PLATFORM      "slte"
-#define DTBH_SUBTYPE       "slte_eur_open"
- /* Hardcoded entry */
-#define DTBH_PLATFORM_CODE 0x32a3
-#define DTBH_SUBTYPE_CODE  0x36d0a7a1
+ /* taken from stock dtb.image (strings dtb.img) */
+#define DTBH_PLATFORM      "gts210"
+#define DTBH_SUBTYPE       "gts210_eur_open"
+ /* Hardcoded entry
+  *
+  * Taken from /proc/last_kmsg after 'reboot bootloader'
+  */
+#define DTBH_PLATFORM_CODE 0x347e
+#define DTBH_SUBTYPE_CODE  0x88668650
 
 struct dt_blob;
 
