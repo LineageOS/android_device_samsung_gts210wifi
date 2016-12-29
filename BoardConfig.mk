@@ -1,5 +1,9 @@
 # Extracted with libbootimg
-BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --dt device/samsung/gts210wifi/dtb.img
+#BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --dt device/samsung/gts210wifi/dtb.img
+BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
+#BOARD_KERNEL_SEPARATED_DT := true
+BOARD_CUSTOM_BOOTIMG_MK := device/samsung/gts210wifi/mkdtbhbootimg.mk
+TARGET_CUSTOM_DTBTOOL := mkdtbhbootimg
 
 # Kernel
 TARGET_KERNEL_CONFIG := cm_exynos5433-gts210wifi_defconfig
