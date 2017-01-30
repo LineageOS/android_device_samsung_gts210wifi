@@ -1,6 +1,6 @@
 ### Bluetooth
 # Split-off for future differences
-vendor/firmware/bcm4358A3_V0062.0104.hcd
+vendor/firmware/bcm4358A3_V0069.0114.hcd
 
 ### GPS
 # Binaries differ between T710, T715, T810 and T815
