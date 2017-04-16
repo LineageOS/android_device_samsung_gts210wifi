@@ -13,7 +13,7 @@ RECOVERY_TOUCHSCREEN_FLIP_Y := true
 TW_THEME := landscape_hdpi
 
 # SELinux
-BOARD_SEPOLICY_DIRS += $(LOCAL_PATH)/sepolicy
+BOARD_SEPOLICY_DIRS := $(LOCAL_PATH)/sepolicy
 
 # Inherit common board flags
 include device/samsung/gts2-common/BoardConfigCommon.mk
