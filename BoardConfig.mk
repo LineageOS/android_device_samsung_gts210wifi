@@ -7,15 +7,8 @@ LOCAL_PATH := device/samsung/gts210wifi
 TARGET_SPECIFIC_HEADER_PATH += $(LOCAL_PATH)/include
 
 # Kernel
+BOARD_MKBOOTIMG_ARGS += --dt $(LOCAL_PATH)/dtb.img
 TARGET_KERNEL_CONFIG := lineage_gts210wifi_defconfig
-
-# RIL
-BOARD_MODEM_TYPE := ss333
-BOARD_PROVIDES_LIBRIL := true
-
-# RIL.java overwrite
-BOARD_RIL_CLASS := ../../../$(LOCAL_PATH)/ril
->>>>>>> 4c50788... gts210ltexx: Update defconfig for new kernel
 
 # Recovery
 TARGET_OTA_ASSERT_DEVICE := gts210wifi,gts210wifixx
